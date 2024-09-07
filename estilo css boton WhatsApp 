@@ -1,0 +1,114 @@
+      <!--wasa-->
+   <style type="text/css">
+body {
+	font-weight: 400;
+	font-size: 16px;
+    Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    background-color: #30c032;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    overflow: visible;
+}
+
+.whatsapp-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    animation: ring 1.5s infinite;
+}
+
+@keyframes ring {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-10deg); }
+    30% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    50% { transform: rotate(15deg); }
+    60% { transform: rotate(-10deg); }
+    70% { transform: rotate(15deg); }
+    80% { transform: rotate(-10deg); }
+    90% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+.whatsapp-button::before,
+.whatsapp-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(37, 211, 102, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    animation: ripple 4s infinite;
+    border-radius: 50px;
+}
+
+.whatsapp-button::after {
+    animation-delay: 1s;
+}
+
+@keyframes ripple {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+/* Adjustments for mobile devices */
+@media (max-width: 600px) {
+    .whatsapp-button {
+        bottom: 40px;
+        right: auto;
+        transform: translateX(30%);
+        padding: 10px 20px; /* Adjusted padding */
+        width: auto; /* Added to ensure button width adjusts to content */
+    }
+
+    .whatsapp-button a {
+        font-size: 16px; /* Keep font size readable */
+    }
+
+    .whatsapp-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+    .whatsapp-button::before,
+    .whatsapp-button::after {
+        width: 100%;
+        height: 200%;
+    }
+}
+ </style>  
+  
+  <!--wasa-->
