@@ -1,0 +1,6 @@
+    <!-- html wasa-->
+        <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone="aquí va el numero de tu WhatsApp"&amp;text=Hola , ¿en qué podemos ayudarte?" target="_blank">
+            <img src="img/iconowasacuadrado.webp" alt="WhatsApp" class="whatsapp-icon">¡Déjanos un whatsapp!</a>
+         </div>  
+<!-- html wasa-->
